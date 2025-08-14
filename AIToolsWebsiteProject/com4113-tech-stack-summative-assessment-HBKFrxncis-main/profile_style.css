@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --accent-colour: #636363;
+    --base-colour: white;
+    --text-colour: #000000;
+    --input-colour: #F3F0FF;
+    --success-colour: #28a745;
+    --error-colour: #dc3545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 12pt;
+    color: var(--text-colour);
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    background-color: var(--base-colour);
+    width: max(40%, 600px);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--input-colour);
+    background-color: var(--input-colour);
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: var(--text-colour);
+    outline: none;
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: 0.85em 4em;
+    background-color: var(--accent-colour);
+    color: var(--base-colour);
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--text-colour);
+}
+
+#success-message {
+    color: var(--success-colour);
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+#error-message {
+    color: var(--error-colour);
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+#logout-button {
+    margin-top: 15px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: var(--base-colour);
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logout-button:hover {
+    background-color: #a72c36;
+}
+
+@media(max-width:1100px) {
+    .wrapper {
+        width: min(600px, 100%);
+        border-radius: 20px;
+    }
+}

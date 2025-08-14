@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Development Tools - AI Tools Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .tools-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 40px;
+      background: #fff;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+    .tools-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .tool-item {
+      display: flex;
+      align-items: center;
+      text-align: left;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+    .tool-item:last-child {
+      border-bottom: none;
+    }
+    .tool-item img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    .tool-item div {
+      flex-grow: 1;
+    }
+    .tool-item h2 {
+      font-size: 1.5rem;
+      margin: 5px 0;
+    }
+    .tool-item p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .tool-item a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .tool-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <div class="head-wrapper">
+    <div class="cmp-container">
+      <div class="header">
+        <img class="logo" src="Images/Unknown.png" alt="AI Tools Hub Logo" title="Logo">
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="dropdown">
+              <a href="#">Tools</a>
+              <div class="dropdown-content">
+                <a href="productivity-tools.html">Productivity Tools</a>
+                <a href="design-tools.html">Design Tools</a>
+                <a href="writing-tools.html">Writing Tools</a>
+                <a href="development-tools.html">Development Tools</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Development Tools Section -->
+  <section class="tools-container">
+    <div class="tools-content">
+      <h1>Top AI Development Tools</h1>
+      <p>Explore AI-powered tools that assist with code generation, automation, and software development.</p>
+      
+      <div class="tool-item">
+        <img src="Images/github-copilot.png" alt="GitHub Copilot">
+        <div>
+          <h2>GitHub Copilot</h2>
+          <p>An AI-powered coding assistant that suggests code snippets and automates repetitive tasks.</p>
+          <a href="https://github.com/features/copilot" target="_blank">Visit GitHub Copilot</a>
+        </div>
+      </div>
+      
+      <div class="tool-item">
+        <img src="Images/tabnine.png" alt="Tabnine">
+        <div>
+          <h2>Tabnine</h2>
+          <p>An AI-driven code completion tool that helps developers write faster and smarter.</p>
+          <a href="https://www.tabnine.com" target="_blank">Visit Tabnine</a>
+        </div>
+      </div>
+      
+      <div class="tool-item">
+        <img src="Images/openai-codex.png" alt="OpenAI Codex">
+        <div>
+          <h2>OpenAI Codex</h2>
+          <p>An AI model that translates natural language into code, enabling rapid software development.</p>
+          <a href="https://openai.com/research/codex" target="_blank">Visit OpenAI Codex</a>
+        </div>
+      </div>
+      
+      <div class="tool-item">
+        <img src="Images/amazon-codewhisperer.png" alt="Amazon CodeWhisperer">
+        <div>
+          <h2>Amazon CodeWhisperer</h2>
+          <p>An AI-powered coding assistant that helps developers build applications faster.</p>
+          <a href="https://aws.amazon.com/codewhisperer/" target="_blank">Visit Amazon CodeWhisperer</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Explore</h2>
+          <a href="productivity-tools.html">Productivity Tools</a>
+          <a href="design-tools.html">Design Tools</a>
+          <a href="writing-tools.html">Writing Tools</a>
+          <a href="development-tools.html">Development Tools</a>
+        </div>
+        <div class="footer__link--items">
+          <h2>About</h2>
+          <a href="mission.html">Our Mission</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo">AI Tools Hub</a>
+        </div>
+        <p class="website__rights">© AI Tools Hub 2024. All rights reserved.</p>
+        <div class="social__icons">
+          <a href="#" class="social__icon--link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
